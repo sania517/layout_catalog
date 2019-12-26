@@ -55,11 +55,6 @@
 .header__reference-group:hover {
   color: #0ad; }
 
-@media (max-width: 950 px) {
-  .header__menu {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; } }
-
 .is-active::after {
   content: "";
   height: 4px;
