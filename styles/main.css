@@ -9,9 +9,6 @@
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   margin-bottom: 50px; }
-  .header__nav {
-    position: relative;
-    margin-right: 50px; }
   .header__logo-link {
     width: 40px;
     height: 40px;
@@ -19,17 +16,20 @@
     top: 10px;
     left: 50px; }
 
-.nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0;
-  width: 760px;
-  list-style-type: none; }
-  .nav-list__element {
+.navigation {
+  position: relative;
+  margin-right: 50px; }
+  .navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+    width: 760px;
+    list-style-type: none; }
+  .navigation__element {
     margin: 0;
     color: black;
     position: relative;
@@ -37,7 +37,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  .nav-list__reference-group {
+  .navigation__reference-group {
     font-size: 12px;
     font-weight: 500;
     text-decoration: none;
@@ -46,7 +46,7 @@
         align-content: center;
     -webkit-transition: color 500ms;
     transition: color 500ms; }
-  .nav-list__reference-group:hover {
+  .navigation__reference-group:hover {
     color: #0ad; }
 
 .is-active {
