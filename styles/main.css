@@ -173,8 +173,6 @@ body {
   max-width: 1200px;
   padding: 0 16px;
   display: grid;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
