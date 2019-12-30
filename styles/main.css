@@ -26,10 +26,10 @@
     opacity: 0;
     position: absolute; }
 
-.navigation {
+.nav {
   position: relative;
   margin-right: 50px; }
-  .navigation__list {
+  .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -39,7 +39,7 @@
     padding: 0;
     width: 760px;
     list-style-type: none; }
-  .navigation__element {
+  .nav__element {
     margin: 0;
     color: black;
     position: relative;
@@ -47,7 +47,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  .navigation__reference-group {
+  .nav__link {
     font-size: 12px;
     font-weight: 500;
     text-decoration: none;
@@ -56,8 +56,18 @@
         align-content: center;
     -webkit-transition: color 500ms;
     transition: color 500ms; }
-  .navigation__reference-group:hover {
+  .nav__link:hover {
     color: #0ad; }
+  .nav__link--is-active {
+    color: #0ad; }
+  .nav__link--is-active::after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color: #0ad;
+    display: block;
+    position: absolute;
+    bottom: 0; }
 
 .sandwich {
   height: 100%;
@@ -79,32 +89,20 @@
   height: 3px;
   background-color: white; }
 
-.is-active {
-  color: #0ad; }
-
-.is-active::after {
-  content: "";
-  height: 4px;
-  width: 100%;
-  background-color: #0ad;
-  display: block;
-  position: absolute;
-  bottom: 0; }
-
 @media (max-width: 950px) {
   .header {
     height: 110px; }
-  .navigation {
+  .nav {
     top: 50px; } }
 
 @media (max-width: 850px) {
-  .navigation {
+  .nav {
     background-color: lightgray;
     height: 200px;
     top: 0;
     margin: 0;
     width: 100%; }
-    .navigation__list {
+    .nav__list {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -113,7 +111,7 @@
           -ms-flex-align: center;
               align-items: center;
       width: 100%; }
-    .navigation__element {
+    .nav__element {
       line-height: 25px; }
   .header {
     height: 40px;
@@ -126,7 +124,7 @@
       left: 0; }
     .header__switch {
       display: block; }
-    .header__checkbox:not(:checked) + .navigation {
+    .header__checkbox:not(:checked) + .nav {
       display: none; } }
 
 p {
@@ -190,7 +188,7 @@ p {
     color: #00acdc;
     background-color: white; }
 
-.raiting {
+.rating {
   margin-top: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
