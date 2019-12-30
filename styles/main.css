@@ -161,7 +161,7 @@ p {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end; }
-  .card__small-text {
+  .card__small--text {
     font-size: 11px;
     line-height: 13px;
     font-weight: 400; }
