@@ -149,7 +149,10 @@ p {
     line-height: 15px;
     font-weight: 500; }
   .card__id {
-    margin-top: 5px; }
+    margin-top: 5px;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 400; }
   .card__price {
     margin: 20px 0;
     display: -webkit-box;
@@ -161,11 +164,11 @@ p {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end; }
-  .card__small--text {
+  .card__price-text {
     font-size: 11px;
     line-height: 13px;
     font-weight: 400; }
-  .card__huge-text {
+  .card__price-value {
     font-size: 16px;
     line-height: 20px;
     font-weight: bold; }
@@ -199,6 +202,10 @@ p {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end; }
+  .rating__comment-count {
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 400; }
 
 .stars {
   height: 15px; }
